@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<title>Countries</title>
+</head>
+
+<body>
+	<div class="overlay"></div>
+	<div id="bloc-lang">
+		<div>
+			<button id="close">
+				<img src="img/close.png" alt="">
+			</button>
+			<button id="open">
+				<span>Translation</span>
+			</button>
+			<h1>Translations</h1>
+			<p><img src="img/france.png" alt=""> <span id="transFr"></span></p>
+			<p><img src="img/spain.png" alt=""> <span id="transSpain"></span></p>
+			<p><img src="img/japan.png" alt=""> <span id="transJap"></span></p>
+			<p><img src="img/germ.png" alt=""> <span id="transGerm"></span></p>
+		</div>
+	</div>
+	<div class="wrap">
+		<form id="search-form" action="">
+			<input id="input-country" placeholder="Search a country" type="text">
+			<button id="search" type="submit" id="button_submit">
+				<img src="img/search.png" alt="">
+			</button>
+			<button id="random">
+				<img src="img/random.png" alt="">
+				<span>random</span>
+			</button>
+		</form>
+
+		<div id="name-country"></div>
+		<img src="" id="flag">
+		<div id="bloc-info">
+			<div>
+				<p>Capital : <span id="capital"></span></p>
+				<p>Population : <span id="pop"></span></p>
+				<p>Native Name : <span id="nat-name"></span></p>
+				<p>Top level Domain : <span id="tld"></span></p>
+			</div>
+		</div>
+	</div>
+	<footer>Developed by <a href="https://championtheo.fr/">Théo Champion</a> 🎣</footer>
+</body>
+
+</html>

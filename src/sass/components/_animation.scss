@@ -1,0 +1,11 @@
+.isOpened{
+    transform: translateX(0) !important;
+}
+
+.isClosed{
+    transform: translateX(-100%);
+}
+
+.isHided{
+    display: none !important;
+}

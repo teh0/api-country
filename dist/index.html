@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<title>Countries</title>
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+	<div class="overlay"></div>
+	<div id="bloc-lang">
+		<div>
+			<button id="close">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjAw4MAQ2Vy3r3AAAAd0lEQVQoz4WRsRGAIAxFHza6gJ7M5Ly6gHZaSeEOLkCJjQqYeFBwR/5L+EkMCzUDJ/J0THjYCDg6RXYEVmjZCRzYTH6iffqwuiwRIeeIKkdT7r6l6bfKJ7vSSIwWLHwRralzyZ0LRDaWIXrfCVJYlmGm+V33iL8A/wROceFuJxUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDMtMTRUMTE6MDE6MTMrMDE6MDDOdjLJAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAzLTE0VDExOjAxOjEzKzAxOjAwvyuKdQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=" alt="">
+			</button>
+			<button id="open">
+				<span>Translation</span>
+			</button>
+			<h1>Translations</h1>
+			<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAACmAAAApgHdff84AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAJBQTFRF////S4fD4UtpNXW/3zVVkq/b6ZKgiqzW44qY8fHxTITG4ExmR4HG30dj8fHxRYDG30VidJ7Q4nSI8fHxTYTI301n4U1nTIPGPHrE3jxa7+/vK2++3StLEl652RI3CVi2EV642Qku2hE1NXTB3TVTAFK0BVW1Bla1DVq3LG+/2AAn2AUr2AYs2Q0y3CxM8PDwvSg0IgAAACV0Uk5TABERGBgjIyUlS2xsb29/l5eYmLLBwcHCy8vm7e37+/39/f3+/oYcpKwAAACKSURBVCiRddLXEoJQDATQtSIWitjAApagxsL//x0PyICazWPOzC2bAFUNXC9Kkshzh2hXZ3EuPnVZdpv+dC/3Gt56mNX9MJc26GNe9cdX+QZ9TgCgl8ov6LEPYC3/oCvAuVnwGsEXCzTAxoYYWxt2yGw4caBH0cvpc+kHaSQ8RBo7HxQfLV8Ga31Knh1J837WJyoAAAAASUVORK5CYII=" alt=""> <span id="transFr"></span></p>
+			<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAACmAAAApgHdff84AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAGZQTFRF////1QAr3wAg1wAo62Ix2QAm2AAn/9lD2QAm2AAn2AAn/9tF2AAn/9pE2AAn2hAp3BAp2xQp2AAn3Bcq/9pE2AAn3Rsr2AAn3R8r2AAn3iEs2AAn2AAn3iUs3ygs2AAn3ygs/9pEsW9aagAAAB90Uk5TAAwQExpKTl9rg4SNmLvC1eDl5+np6+3x8vP2+fr6/g35vP0AAACESURBVCjPdZJXDoNQDASX3nuvhvtfMighAhLvfO5Ir6wNfDD9OG2aNPZN3LHCTk660LpyZ5Abg/PN3UkeTO6Zz/LD/DZGKX+UxiECUQgAO8uLqu3HZd0O1mXs26rIMxveruIh0kWERBcJal3UXNCj6OX0ufSDtBJeIq2dD4qPli+Dtj4vYbs0XWPwC0IAAAAASUVORK5CYII=" alt=""> <span id="transSpain"></span></p>
+			<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAACmAAAApgHdff84AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAADlQTFRF////////8/Pz7+/v8fHx8fHx8fHx7+/v8fHx8PDw7+/v8PDw2AAn2hQ43jlX5HmN7dTY8Ozt8PDwUOVZBgAAAAx0Uk5TAAUWMEtqf4Cy0Ob69Vq7RgAAAIxJREFUKM91ktsChCAIRNHMvGCW//+xW4HWbjvniYsOCBIJ1vmQUvDO0hOz5KZkb+74FNuDOPX4nNsXedbzP/Ejc90xsb2IZ51luNs2TH/0qUJ7Lcyl7ipmyWl85YtVM468GJWV2rWCGKUniviBktTlgXSQcAJKweKwXfhAOBI8RDh2vCi8WvwZ/n2fD67YG+Fd73xCAAAAAElFTkSuQmCC" alt=""> <span id="transJap"></span></p>
+			<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAACmAAAApgHdff84AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAJBQTFRF////AAAA/9VAAAAA/99AAAAA/9dDYgAU63Y7AAAA/9lFAAAA/9tF1wAoAAAA/9lFAAAA/9pEAAAA/9pE1wAoAAAA/9pF1wAoAAAA/9pELwAI96w+AAAA/9lE2AAnAAAA/9pEAAAA/9pEAAAA/9pEAAAA/9pEAAAAKgAH+LA+/9pEAAAAKQAH2AAn+LE//9pEi2M3NAAAACt0Uk5TAAwMEBATExoaSkpOTl9ra4ODhISNmJi7wsLf3+fn6evr8fHz8/n5+vr6+uS38SMAAACnSURBVBgZbcEHEoIwFAXAB6h0QYggFrq0GHP/28loxkH5u1CM/fFUFKfj3sDSNqq4UkVbfNkNX2hsKO6d/7i7eHN7/qd3MdOufOWqAQg5IQTM8/BYGc4mfEHywQSJIRWkFLkg5cgFKUcqSCmYIDH4guTDuozPlfFiAQdJOADQb3LlpmPmTfLP5OHN6+SPzoPitHKhdfC1i2up1PEOS5sgycoyS4INPl4AmEwdAR3VjAAAAABJRU5ErkJggg==" alt=""> <span id="transGerm"></span></p>
+		</div>
+	</div>
+	<div class="wrap">
+		<form id="search-form" action="">
+			<input id="input-country" placeholder="Search a country" type="text">
+			<button id="search" type="submit" id="button_submit">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAQAAABKIxwrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfjAwsSAxTi8M79AAABQklEQVQ4y53Sv0ojURiG8Z9RRDAsiorgJXgD9gu7d7CdiNpo7BRBhcBusZXd1ovtoq1lQOwsLBQvIusSUJGYQOKfz8LZmBkmGnxPdR6e95yZw8f/jFpTUdXy17F1Y97IN5cita4s95K3PAmh6ci+inpS2c0/+UloKysmZMSGphBWs3LRpdD2JcPn3Am3ptJ4TQjlnFtLQviehhWh2fmM7gypCedpWBWOejzBgdAy8AoKJlHrof/DsE/d+jUmeuhTeFDvRsdC3UiOXFAVLtLoEEWlHH3eDA7TcMyV0DSXkWfdCA3T2VOWhXCnZKhz54IbIazk/dJuMiM1B375o9oZtN8W8wqrbjMT2bBiTwg7+Y/2w7mWcO/CT9NYSqq5hZeMK3Ttdt4vpLOZFMofKAz2oZ9o+IrPHvvRXwtn/emcaDu1/QweMYpO5NfEGQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wMy0xMVQxNzowMzoyMCswMTowMK9Y/UEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDMtMTFUMTc6MDM6MjArMDE6MDDeBUX9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==" alt="">
+			</button>
+			<button id="random">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjAw0BAjIS7Ti0AAABQElEQVQ4y5XUTSulYRgH8N/jPYWFkjmHk52aEFaUZsGxZmFhgymfQKnZKB+AkghZ2PgAygILNZPlNLH0UqLZTFmJHA1Hx+Z4HHH0PP/dfV/X//7f1ytRMOHIl0ieeTS7cByPknLuVIJAuVW1uPLbtusCp1KDBiSUgya9TnSVIIdKPTZcmBLk3dPO7BpW/0YpV3hoMC9rU4DvnuzpCG0txaIY8mhGnazFqEHPykj6Gn4Nxh1qLJaPajemi6er5N1Nxk/f4hD4KxGP8F9FPMKn+IjwGFfhn4TSOKqdcvqju3er8cfBG+0xh8XqPCprRJ8HCwW1Trn8qDWSljxZE2BS1o720NbyQglUWlGjSkq7Wz+s51s4bVmrc6fuQLMeJzrLBALc+2XOlkz45r42A9KSyvAyCYGICEc0GmIvgfHXNfMMYBNMunzUdq8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDMtMTNUMDA6MDI6NTArMDE6MDAtg10rAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAzLTEzVDAwOjAyOjUwKzAxOjAwXN7llwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=" alt="">
+				<span>random</span>
+			</button>
+		</form>
+
+		<div id="name-country"></div>
+		<img src="xxxHTMLLINKxxx0.8957683867082420.4523906893640057xxx" id="flag">
+		<div id="bloc-info">
+			<div>
+				<p>Capital : <span id="capital"></span></p>
+				<p>Population : <span id="pop"></span></p>
+				<p>Native Name : <span id="nat-name"></span></p>
+				<p>Top level Domain : <span id="tld"></span></p>
+			</div>
+		</div>
+	</div>
+	<footer>Developed by <a href="https://championtheo.fr/">Théo Champion</a> 🎣</footer>
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>

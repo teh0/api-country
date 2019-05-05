@@ -1,0 +1,196 @@
+.wrap {
+    position: relative;
+}
+
+form {
+    width: $w-form;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+
+    input {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 25px;
+        font-family: $main;
+
+        &::placeholder {
+            font-size: 20px;
+            font-style: italic;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    button#search {
+        padding: 5px;
+        border-radius: 7px;
+
+        &:hover {
+            background-color: #E9EBEE;
+        }
+    }
+
+    button#random {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 7px;
+
+        span {
+            font-family: $main;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+
+        &:hover {
+            background-color: #E9EBEE;
+        }
+    }
+}
+
+#name-country {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $main;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    color: $color-main;
+}
+
+#flag {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $w-form/3.5;
+}
+
+#bloc-info {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-family: $main;
+    line-height: 40px;
+    color: $color-main;
+
+    p {
+        font-weight: bold;
+
+        span {
+            font-weight: 400;
+            font-size: 25px;
+        }
+    }
+}
+
+#bloc-lang {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: auto;
+    font-size: 28px;
+    font-family: $main;
+    line-height: 40px;
+    box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    background-color: white;
+    z-index: 20;
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.3s;
+
+    div:first-of-type {
+        position: relative;
+        padding: 50px;
+        box-sizing: border-box;
+
+        button#close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 6px;
+
+            &:hover {
+                background-color: #E9EBEE;
+            }
+        }
+
+        button#open {
+            font-family: $main;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            cursor: pointer;
+            transform: translate(90%, -50%);
+            border: none;
+            outline: none;
+            padding: 6px;
+            background-color: white;
+            box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+
+            span {
+                writing-mode: vertical-lr;
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            &:hover {
+                background-color: #E9EBEE;
+            }
+        }
+
+        h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: bold;
+
+            span {
+                font-weight: 400;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    font-family: $main;
+    color: black;
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+}
